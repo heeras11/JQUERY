@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>jQuery Exercise</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+
+          $('#btn1').click(function(){
+                var A = parseInt($('#A').val());
+                var B = parseInt($('#B').val());
+
+                 // alert(A + " + "+ B +" = "+ (A+B));
+                $('#answers').append(A + " + "+ B +" = "+ (A+B) + '<br>'); 
+
+       
+        });
+    });
+
+      </script>
+</head>
+<body>
+
+
+
+<select id="A">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+ </select>
+
+
+
+
+<select id="B">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+ </select>
+ 
+
+
+<button id="btn1">add</button>
+
+<div id="answers">
+
+</div>
+
+
+
+</form>
+</body>
+</html>

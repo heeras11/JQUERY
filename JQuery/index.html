@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>JQuery Exercise</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+	//run the following function/stuff when the document is ready
+
+	$(document).ready(function(){
+
+		$('h1').click(function(){
+			alert('clicked on h1');
+			$('#special').fadeOut();
+
+		});
+
+		$('h2').click(function(){
+			alert('clicked on h2');
+			$('special').fadeIn();
+		});
+$('h1').click(function()
+
+	});
+
+
+	</script>
+</head>
+
+<body>
+
+	<h1>Main Heading</h1>
+	<p>This is a paragraph</p>
+
+	<h2>Secondary Heading</h2>
+	<p id="special">This is a second paragraph</p>
+
+
+
+</body>
+</html>

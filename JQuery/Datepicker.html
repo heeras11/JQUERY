@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Datepicker</title>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+          $(".datepicker").datepicker();	
+
+          $('form').submit(function(){
+          	$('#first').val();
+          	$('#second').val();
+          	$('#info').text($('#first').val()+" to "+$('#second').val());
+          	return false; //prevent the page to go to another page. 
+          });
+    	
+  		
+       });
+       </script>
+</head>
+
+<body>
+	<div id="info"></div>
+
+	<form>
+	<p>From: <input type="text" class="datepicker" id="first"/></p>
+	<p>To: <input type="text" class="datepicker" id="second"/></p>
+	<input type="submit" value="Submit"/>
+</form>
+
+
+</body>
+</html>

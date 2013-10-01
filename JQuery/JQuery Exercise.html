@@ -1,0 +1,105 @@
+<html>
+<head>
+    <title>jQuery Exercise</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $('document').ready(function() {
+            
+            //hides the h1 and p tag
+        	// $('h1, p').hide(2000);
+
+        	$('#btn1').click(function(){
+        		$('p').hide(1000);
+        	});
+
+        	$('#btn2').click(function(){
+        		$('p').show(1000);
+        	});
+
+        	$('#btn3').click(function(){
+        		$('p').toggle();
+        	});
+
+        	$('#btn4').click(function(){
+        		$('p.second_p').slideUp();
+        	});
+
+        	$('#btn5').click(function(){
+        		$('p.second_p').slideDown();
+        	});
+
+        	$('#btn6').click(function(){
+        		$('p.second_p').slideToggle();
+        	});
+
+        	$('#btn7').click(function(){
+        		$('p.third_p').fadeOut();
+        	});
+
+        	$('#btn8').click(function(){
+        		$('p.third_p').fadeIn();
+        	});
+   			
+
+   			$('#test_form').submit(function(){
+   				var email = $('#email').val();
+   				var password = $('#password').val();
+
+   				$('#message_box').html("<marquee>Email you entered was " + email + "</marquee>"+"<marquee>Password you entered was " + password + "</marquee>");
+   				return false;
+   			});
+
+   			$('a').click(function(){
+   				var link = $(this).attr('href')
+   				alert('you clicked on a link: ' + link);
+   				return false;
+   			});
+        });
+    </script>
+
+</head>
+<body>
+    <h2>CodingDojo Seattle</h2>
+    <p>Hi. We are doing a morning lecture here in Bellevue WA</p>
+
+    <button id="btn1">Hide all paragraphs</button>
+    <button id="btn2">Show all paragraphs</button>
+    <button id="btn3">Toggle all paragraphs</button>
+
+    <h2>slideDown, slideUp, slideToggle</h2>
+    <p class="second_p">Second paragraph to illustrate slide methods in jQuery. Second paragraph to illustrate slide methods in jQuery. Second paragraph to illustrate slide methods in jQuery. Second paragraph to illustrate slide methods in jQuery. Second paragraph to illustrate slide methods in jQuery</p>
+
+    <button id="btn4">slideDown the paragraph</button>
+    <button id="btn5">slideUp the paragraph</button>
+    <button id="btn6">slideToggle the paragraph</button>
+
+    <h2>fadeOut, fadeIn</h2>
+    <p class="third_p">Second paragraph to illustrate slide methods in jQuery</p>
+
+    <button id="btn7">fadeOut the paragraph</button>
+    <button id="btn8">fadeIn the paragraph</button>
+
+    <h2>Text Manipulation</h2>
+
+    <div id="message_box">
+
+    </div>
+    <form id="test_form">
+    	<input type="text" id="email" name="email" placeholder="enter email address"/>
+    	<input type="password" id="password" name="password" placeholder="enter password" value="" />
+    	<input type="submit" value="Submit" />
+    </form>
+
+    <a href="http://www.cnn.com">Go to CNN</a>
+	<a href="http://www.disney.com">Go to Disney</a>
+	<a href="http://www.espn.com">Go to ESPN</a>
+
+    <h2>Other jQuery tags</h2>
+
+    <p>.append - this appends texts</p>
+
+
+
+</body>
+</html>

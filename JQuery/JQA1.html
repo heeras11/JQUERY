@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>JQ Assignment Number 1</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+
+       		$('img').click(function(){
+       			console.log('here');
+    			$(this).hide(3000);
+       		});
+       		$('button').click(function(){
+       			$('img').show();
+       		});
+
+        });
+        
+</script>
+</head>
+<body>
+
+	<img src="kitty.jpg" />
+	<img src="kitty.jpg" />
+	<img src="kitty.jpg" />
+	<img src="kitty.jpg" />
+	<img src="kitty.jpg" />
+	<img src="kitty.jpg" />
+	<img src="kitty.jpg" />
+	<img src="kitty.jpg" />
+	<img src="kitty.jpg" />
+
+
+	<button>RESTORE</button>
+
+</body>
+</html>

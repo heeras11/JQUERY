@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>jQuery Exercise</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+   
+    <script type="text/javascript">
+        $(document).ready(function() {
+        	$('.kit').hide();
+
+
+            $('img').click(function(){
+                $(this).hide();
+                $(this).siblings().show();
+                
+            });
+
+        });
+   
+    </script>
+
+    <style>
+    #ninja li{
+    	list-style-type:none;
+    }
+    #kitty li{
+        list-style-type:none;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+	<ul id="ninja">
+	    <li><img src="ninja1.png" class="nin"/> <img src="kitty1.png" class="kit"/> </li>
+	    <li><img src="ninja2.png" class="nin"/> <img src="kitty2.png" class="kit"/> </li>
+        <li><img src="ninja3.png" class="nin"/> <img src="kitty3.png" class="kit"/> </li>
+        <li><img src="ninja4.png" class="nin"/> <img src="kitty4.png" class="kit"/> </li>
+        <li><img src="ninja5.png" class="nin"/> <img src="kitty5.png" class="kit"/> </li>
+
+    </ul>
+
+</body>
